@@ -3,13 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>Document</title>
+    <title>Architect Studio | Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-        <h1 class="text-center">Pakin Github</h1>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ARCHITECT STUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-1" data-aos="fade-up">สร้างสรรค์พื้นที่แห่งจินตนาการ</h1>
+                    <p class="lead" data-aos="fade-up" data-aos-delay="200">ด้วยประสบการณ์กว่า 20 ปี เราพร้อมสร้างสรรค์งานออกแบบที่ตอบโจทย์ทุกความต้องการ</p>
+                    <a href="projects.html" class="btn btn-outline-light btn-lg mt-3" data-aos="fade-up" data-aos-delay="400">ดูผลงานของเรา</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Featured Projects -->
+    <section class="featured-projects py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">ผลงานล่าสุด</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="project-card">
+                        <img src="https://drive.apt.london/2024/12/_cache/1294da50fe6a86028e8df810caa80c2c_a71223663f39148da980f037d1e3d363.JPG" alt="Project 1" class="img-fluid">
+                        <div class="project-info">
+                            <h3>Modern Villa</h3>
+                            <p>กรุงเทพมหานคร</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card">
+                        <img src="https://drive.apt.london/2021/08/_cache/f7d38eba4e844585938543e534c0171e_8c9dd3cf4d09642b0dcf6e22c91a0fb1.jpg" alt="Project 2" class="img-fluid">
+                        <div class="project-info">
+                            <h3>Luxury Condo</h3>
+                            <p>ภูเก็ต</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card">
+                        <img src="https://drive.apt.london/2022/11/_cache/60c737817994969eef5a00fae637b408_44bb8cb5239a2b5506c664b181c163d1.jpg" alt="Project 3" class="img-fluid">
+                        <div class="project-info">
+                            <h3>Office Building</h3>
+                            <p>เชียงใหม่</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ARCHITECT STUDIO</h5>
+                    <p class="fw-light">สร้างสรรค์พื้นที่แห่งจินตนาการ</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ติดต่อเรา</h5>
+                    <p class="fw-light">
+                        123 ถนนสุขุมวิท <br>
+                        กรุงเทพมหานคร 10110 <br>
+                        โทร: 02-xxx-xxxx <br>
+                        อีเมล: info@architectstudio.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>ติดตามเรา</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/2806fc75cf.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
