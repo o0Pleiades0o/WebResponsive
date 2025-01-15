@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Architect Studio | Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">ARCHITECT STUDIO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="team.html">Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="projects.html">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <header class="contact-hero">
+        <div class="container">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-12 text-center" data-aos="fade-up">
+                    <h1 class="display-4">ติดต่อเรา</h1>
+                    <p class="lead">พร้อมให้คำปรึกษาและรับฟังทุกไอเดียของคุณ</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Info Section -->
+    <section class="contact-info py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up">
+                    <div class="info-card">
+                        <div class="icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>ที่อยู่</h4>
+                        <p>123 ถนนสุขุมวิท<br>กรุงเทพมหานคร 10110</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="info-card">
+                        <div class="icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>โทรศัพท์</h4>
+                        <p>02-xxx-xxxx<br>084-xxx-xxxx</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="info-card">
+                        <div class="icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>อีเมล</h4>
+                        <p>info@architectstudio.com<br>support@architectstudio.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4" data-aos="fade-right">
+                    <div class="form-wrapper">
+                        <h2 class="mb-4">ส่งข้อความถึงเรา</h2>
+                        <form id="contactForm">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="ชื่อ-นามสกุล" required>
+                                <label for="name">ชื่อ-นามสกุล</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control" id="email" placeholder="อีเมล" required>
+                                <label for="email">อีเมล</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="tel" class="form-control" id="phone" placeholder="เบอร์โทรศัพท์">
+                                <label for="phone">เบอร์โทรศัพท์</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <select class="form-select" id="subject">
+                                    <option value="">เลือกหัวข้อที่ต้องการติดต่อ</option>
+                                    <option value="consultation">ปรึกษาการออกแบบ</option>
+                                    <option value="quotation">ขอใบเสนอราคา</option>
+                                    <option value="collaboration">ร่วมงานกับเรา</option>
+                                    <option value="other">อื่นๆ</option>
+                                </select>
+                                <label for="subject">หัวข้อที่ต้องการติดต่อ</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" id="message" style="height: 150px" placeholder="ข้อความ" required></textarea>
+                                <label for="message">ข้อความ</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark btn-lg w-100">ส่งข้อความ</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="map-wrapper">
+                        <h2 class="mb-4">แผนที่</h2>
+                        <div class="map-container">
+                            <div id="map">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1151.4732883504387!2d100.6168566623462!3d13.894221837112475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30e2829faad1d767%3A0x6f531b7aec36a706!2z4Lin4Li04LiX4Lii4Liy4Lil4Lix4Lii4LmA4LiX4LiE4LmC4LiZ4LmC4Lil4Lii4Li14Liq4Lii4Liy4Lih4Lia4Lij4Li04Lir4Liy4Lij4LiY4Li44Lij4LiB4Li04LiIIOC4p-C4tOC4l-C4ouC4suC5gOC4guC4leC4quC4sOC4nuC4suC4meC5g-C4q-C4oeC5iA!5e0!3m2!1sth!2sth!4v1736865187996!5m2!1sth!2sth" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <div class="office-hours mt-4">
+                            <h4>เวลาทำการ</h4>
+                            <p>จันทร์ - ศุกร์: 9:00 - 18:00<br>
+                            เสาร์: 9:00 - 15:00<br>
+                            อาทิตย์: ปิดทำการ</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center" data-aos="fade-up">
+                    <h2>พร้อมเริ่มต้นโครงการกับเรา?</h2>
+                    <p class="lead mb-4">ให้เราช่วยเปลี่ยนความฝันของคุณให้เป็นจริง</p>
+                    <a href="tel:02-xxx-xxxx" class="btn btn-light btn-lg">โทรหาเราเลย</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>ARCHITECT STUDIO</h5>
+                    <p class="fw-lighter">สร้างสรรค์พื้นที่แห่งจินตนาการ</p>
+                </div>
+                <div class="col-md-4">
+                    <h5">ติดต่อเรา</h5>
+                    <p class="fw-lighter">
+                        123 ถนนสุขุมวิท<br>
+                        กรุงเทพมหานคร 10110<br>
+                        โทร: 02-xxx-xxxx<br>
+                        อีเมล: info@architectstudio.com
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5 >ติดตามเรา</h5>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/2806fc75cf.js" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>

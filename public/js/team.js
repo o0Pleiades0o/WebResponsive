@@ -16,6 +16,16 @@ const teamMembers = [
             instagram: '#'
         }
     },
+    {
+        name: 'สมศรี บุญมี',
+        position: 'Senior Interior',
+        image: 'https://drive.apt.london/2024/12/_cache/30b051b76fa1ced1a21dcd58a508e25b_220c0ff88c60203fcafa28f9ae8c2d3c.JPG',
+        category: 'interior',
+        social: {
+            linkedin: '#',
+            instagram: '#'
+        }
+    },
     // Add more team members here
 ];
 
@@ -51,3 +61,41 @@ function loadTeamMembers(filter = 'all') {
         }
     });
 }
+
+// Load initial team members
+loadTeamMembers();
+
+// Add click event to filter buttons
+filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        filterButtons.forEach(btn => btn.classList.remove('active'));
+        button.classList.add('active');
+        loadTeamMembers(button.getAttribute('data-filter'));
+    });
+});
+
+// Add click event to load more button
+const loadMoreBtn = document.getElementById('load-more');
+loadMoreBtn.addEventListener('click', () => {
+    loadTeamMembers(currentFilter);
+});
+
+// Counter Animation
+const counters = document.querySelectorAll('.counter');
+const speed = 200;
+
+const animateCounter = () => {
+    counters.forEach(counter => {
+        const target = +counter.innerText;
+        const count = +counter.innerText;
+        
+        const inc = target / speed;
+        
+        if (count < target) {
+            counter.innerText = Math.ceil(count + inc);
+            setTimeout(animateCounter, 1);
+        } else {
+            counter.innerText = target;
+        }
+    });
+};

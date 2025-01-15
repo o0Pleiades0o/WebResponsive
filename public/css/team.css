@@ -1,7 +1,7 @@
 /* Team Hero Section */
 .team-hero {
     padding: 120px 0 60px;
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../images/team-hero.jpg');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://drive.apt.london/2021/05/_cache/8b206aded13163ba897b5b994dc4cbcf_5388281ff2a2557cbd4c5293bfbad6b2.jpg');
     background-size: cover;
     background-position: center;
     color: white;

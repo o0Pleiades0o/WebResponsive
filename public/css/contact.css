@@ -1,0 +1,129 @@
+/* Contact Hero Section */
+.contact-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://drive.apt.london/2022/11/_cache/d712ab99f61ef1033fb9b739d96e9b85_6f6677a466a1323bb0445d74e9b72cf3.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 0 60px;
+}
+
+.min-vh-50 {
+    min-height: 50vh;
+}
+
+/* Contact Info Section */
+.info-card {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.info-card .icon {
+    font-size: 2.5rem;
+    color: #212529;
+    margin-bottom: 20px;
+}
+
+.info-card h4 {
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+/* Contact Form Section */
+.form-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.form-control, .form-select {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #212529;
+    box-shadow: 0 0 0 0.2rem rgba(33, 37, 41, 0.25);
+}
+
+/* Map Section */
+.map-wrapper {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.map-container {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#map {
+    width: 100%;
+    height: 100%;
+}
+
+/* Call to Action Section */
+.cta {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../images/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Animation Classes */
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-hero {
+        padding: 100px 0 40px;
+    }
+    
+    .info-card {
+        padding: 20px;
+    }
+    
+    .form-wrapper, .map-wrapper {
+        padding: 20px;
+    }
+    
+    .map-container {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .info-card .icon {
+        font-size: 2rem;
+    }
+    
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}
